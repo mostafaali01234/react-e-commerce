@@ -1,0 +1,32 @@
+.center {
+    /* width: 97vw; */
+    background: #eaded7;
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    color: #453227;
+}
+
+.center h3 {
+    margin: 0 3rem;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.center h3 .link {
+    text-decoration: none;
+    color: #795744;
+    padding: 0.5rem;
+    transition: all 0.3s linear;
+}
+
+.center .link:hover {
+    color: var(--clr-primary-1);
+}
+
+@media (min-width: 850px) {
+    .center h3 {
+        font-size: 2rem;
+    }
+}

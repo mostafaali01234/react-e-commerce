@@ -23,6 +23,7 @@
 .nav-header img {
     width: 175px;
     margin-left: -15px;
+    cursor: pointer;
 }
 
 .nav-container .nav-center .nav-links {
@@ -35,7 +36,7 @@
     margin: 0 0.5rem;
 }
 
-.nav-center .nav-links li a {
+.nav-center .nav-links li .nav-link {
     color: #324d67;
     font-size: 1rem;
     text-transform: capitalize;
@@ -44,7 +45,7 @@
     text-decoration: none;
 }
 
-.nav-center .nav-links li a:hover {
+.nav-center .nav-links li .nav-link:hover {
     border-bottom: 2px solid #c5a491;
 }
 

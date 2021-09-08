@@ -1,18 +1,14 @@
-
 import React from "react";
 import "./App.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import HomePage from "./pages/HomePage";
+import About from "./components/About";
+import Navbar from "./components/Navbar";
 
 import { connect } from "react-redux";
-
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import FeaturedProducts from "./components/FeaturedProducts";
-import Services from "./components/Services";
-import Contact from "./components/Contact";
-
-import { bindActionCreators } from "redux";
 import { useEffect } from "react";
-
+import { bindActionCreators } from "redux";
 import fetchProductsAction from "./redux/fetchProducts";
 import {
   getProductsError,
@@ -31,19 +27,25 @@ const App = (props) => {
     fetchProducts();
   }, [fetchProducts]);
 
-  const { products, error, pending } = props;
+  // const { products, error, pending } = props;
 
   return (
-    <div className="App">
-      <Navbar />
-      <Hero />
-      <FeaturedProducts />
-      <Services />
-      <Contact />
-      <footer>
-        © 2021 <span>&nbsp;ComfySloth&nbsp;</span> All rights reserved
-      </footer>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Switch>
+          <Route exact path="/">
+            <HomePage />
+          </Route>
+          <Route exact path="/about">
+            <About />
+          </Route>
+        </Switch>
+        <footer>
+          © 2021 <span>&nbsp;ComfySloth&nbsp;</span> All rights reserved
+        </footer>
+      </div>
+    </Router>
   );
 };
 

@@ -11,7 +11,6 @@
 }
 
 .product-container img {
-    cursor: pointer;
     height: 225px;
     width: 100%;
     display: block;
@@ -34,12 +33,12 @@
     border-radius: 50%;
     transition: all 0.3s linear;
     opacity: 0;
-    cursor: pointer;
 }
 
 .product-container .link:last-child {
     font-size: 1.25rem;
     color: #fff;
+    cursor: pointer;
 }
 
 .product-container:hover img {
