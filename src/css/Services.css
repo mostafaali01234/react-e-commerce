@@ -1,0 +1,116 @@
+.servicesContainer {
+    background-color: #eaded7;
+    margin: 0px;
+    padding: 3rem;
+}
+
+.servicesContainer .centered {
+    /* width: 90%; */
+    margin: 0 auto;
+}
+
+.servicesContainer .header {
+    text-align: left;
+}
+
+.header h3 {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    color: #453227;
+}
+
+.header p {
+    margin-bottom: 0px;
+    line-height: 1.8;
+    color: #795744;
+    font-size: 0.9rem;
+}
+
+.servicesContainer .services-boxes {
+    margin-top: 3rem;
+}
+
+.servicesContainer .services-boxes .service {
+    background: #c5a491;
+    text-align: center;
+    padding: 2.5rem 2rem;
+    border-radius: 0.25rem;
+    margin-bottom: 2rem;
+}
+
+.servicesContainer .services-boxes .service span {
+    width: 4rem;
+    height: 4rem;
+    display: grid;
+    margin: 0px auto 1rem;
+    place-items: center;
+    border-radius: 50%;
+    background: #eaded7;
+    color: #453227;
+    font-size: 2rem
+}
+
+.servicesContainer .services-boxes .service h4 {
+    color: #453227;
+}
+
+.servicesContainer .services-boxes .service p {
+    color: #5f4435;
+    font-size: 0.9rem;
+}
+
+@media (min-width: 992px) {
+    .header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    h3,
+    p {
+        flex: 50%;
+    }
+
+    .servicesContainer h3 {
+        font-size: 2rem;
+    }
+
+    .services-boxes {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .services-boxes .service {
+        width: 42%;
+    }
+}
+
+/* @media (max-width: 576px) {
+    .servicesContainer {
+        padding: 3rem;
+    }
+
+}
+
+*/
+@media (min-width: 1280px) {
+    .servicesContainer {
+        padding: 0 3rem;
+    }
+
+    .services-boxes {
+        /* transform: translateY(5rem); */
+        flex-wrap: nowrap;
+    }
+
+    .services-boxes .service {
+        margin-right: 30px;
+        width: 35%;
+    }
+
+    .servicesContainer .centered {
+        transform: translateY(5rem);
+    }
+}
