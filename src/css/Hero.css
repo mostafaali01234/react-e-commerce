@@ -36,6 +36,12 @@
         border-radius: 0.25rem;
         display: block;
         object-fit: cover;
+        flex: 0 0 50%;
+    }
+
+    .Hero-container .txt {
+        flex: 0 0 40%;
+        margin-right: 2rem;
     }
 
     .Hero-container p {

@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../img/logo.svg";
+import { Link } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
 import "../css/Navbar.css";
 
@@ -7,19 +8,25 @@ const Navbar = () => {
   return (
     <div className="nav-container">
       <div className="nav-center">
-        <div className="nav-header">
+        <Link to="/" className="nav-header">
           <img src={logo} alt="logo" />
-        </div>
+        </Link>
 
         <ul className="nav-links">
           <li>
-            <a href="#">Home</a>
+            <Link className="nav-link" to="/">
+              Home
+            </Link>
           </li>
           <li>
-            <a href="#">About</a>
+            <Link className="nav-link" to="/about">
+              About
+            </Link>
           </li>
           <li>
-            <a href="#">Product</a>
+            <Link className="nav-link" to="/">
+              Product
+            </Link>
           </li>
         </ul>
         <div>
