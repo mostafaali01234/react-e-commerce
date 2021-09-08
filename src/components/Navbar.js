@@ -1,13 +1,14 @@
 import React from "react";
 import logo from "../img/logo.svg";
-import { FaShoppingCart, FaUserMinus, FaUserPlus } from "react-icons/fa";
+import { FaShoppingCart } from "react-icons/fa";
 import "../css/Navbar.css";
+
 const Navbar = () => {
   return (
     <div className="nav-container">
       <div className="nav-center">
         <div className="nav-header">
-          <img src={logo} alt="" />
+          <img src={logo} alt="logo" />
         </div>
 
         <ul className="nav-links">
